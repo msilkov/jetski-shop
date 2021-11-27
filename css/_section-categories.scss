@@ -1,0 +1,79 @@
+.section-categories {
+	margin-bottom: 80px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		@media screen and (max-width: $ipad-pro) {
+			justify-content: space-evenly;
+		}
+	}
+	&__item {
+		max-width: 370px;
+		min-height: 129px;
+		margin-bottom: 30px;
+		border: 1px solid #cdcdcd;
+		border-radius: 3px;
+		display: flex;
+		justify-content: space-between;
+		transition: all 0.3s;
+		&:hover {
+			box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+			.section-categories__item-title {
+				color: $accent;
+			}
+		}
+		@media screen and (max-width: $ipad-mini) {
+			max-width: none;
+			width: 700px;
+			padding: 30px;
+		}
+		&-info {
+			padding: 20px 20px 16px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			@media screen and (max-width: $iphone) {
+				padding: 0;
+			}
+		}
+		&-title {
+			font-family: "Barlow", sans-serif;
+			font-weight: 700;
+			font-size: 23px;
+			line-height: 28px;
+			color: $text-main;
+			transition: all 0.3s;
+			@media screen and (max-width: $iphone) {
+				font-size: 18px;
+				line-height: 18px;
+			}
+		}
+		&-text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			color: $light-grey;
+			&::after {
+				content: url("../images/icons/arrow-more.svg");
+				padding-left: 3px;
+				width: 6px;
+				height: 9px;
+			}
+		}
+		&-img {
+			width: 50%;
+			max-height: 113px;
+			text-align: center;
+			padding: 10px;
+			@media screen and (max-width: $ipad-mini) {
+				max-height: 180px;
+			}
+			@media screen and (max-width: $iphone) {
+				max-height: none;
+				height: 120px;
+			}
+		}
+	}
+}

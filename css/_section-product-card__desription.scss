@@ -1,0 +1,180 @@
+.section__product-card__desc-tabs {
+	margin-bottom: 100px;
+}
+.tabs {
+}
+.product-card__desc-tabs {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $base;
+	padding: 22px 0;
+	margin-bottom: 50px;
+	@media screen and (max-width: $iphone) {
+		margin-bottom: 20px;
+		width: 1000px;
+	}
+}
+
+.product-card__desc-tab {
+	font-size: 20px;
+	line-height: 24px;
+	opacity: 0.6;
+	&.tab--active {
+		font-size: 20px;
+		line-height: 24px;
+		opacity: 1;
+		border-bottom: 1px solid $accent;
+		@media screen and (max-width: $ipad-mini) {
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: $ipad-mini) {
+		font-size: 16px;
+	}
+	@media screen and (max-width: $iphone) {
+		display: inline-block;
+	}
+}
+
+.tabs-container {
+}
+.tabs-content {
+}
+.product-card__desc-tab-content {
+}
+.tabs-content--active {
+}
+.product-card__desc-header {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	@media screen and (max-width: $ipad-mini) {
+		justify-content: space-around;
+	}
+	@media screen and (max-width: $iphone) {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 0;
+	}
+}
+.product-card__desc-label-search {
+	font-size: 17px;
+	line-height: 20px;
+	color: rgba($color: $text-main, $alpha: 0.7);
+	@media screen and (max-width: $iphone) {
+		margin-bottom: 20px;
+	}
+}
+.product-card__desc-input-search {
+	background: $base;
+	border-radius: 3px;
+	margin-left: 17px;
+	margin-right: 100px;
+	padding: 9px 37px 9px 17px;
+	border: none;
+	@media screen and (max-width: $ipad-mini) {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+.product-card__desc-label-wrapper {
+	display: flex;
+	@media screen and (max-width: $ipad-mini) {
+		flex-direction: column;
+	}
+}
+.product-card__desc-label-pick {
+	margin-left: 54px;
+	font-size: 17px;
+	line-height: 20px;
+	color: rgba($color: $text-main, $alpha: 0.7);
+	display: block;
+	@media screen and (max-width: $ipad-mini) {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+.product-card__desc-list {
+}
+.card__desc-list__item {
+	padding: 20px 0;
+	border-bottom: 1px solid rgba($color: $text-main, $alpha: 0.1);
+	display: flex;
+	font-size: 16px;
+	line-height: 22px;
+	color: rgba($color: $text-main, $alpha: 0.7);
+	@media screen and (max-width: $iphone) {
+		display: block;
+		> div {
+			padding-left: 20px;
+			margin-bottom: 15px;
+		}
+	}
+	.card__desc-list__title {
+		color: $text-main;
+		@media screen and (max-width: $ipad-mini) {
+			margin-right: 0;
+		}
+		@media screen and (max-width: $iphone) {
+			display: none;
+		}
+	}
+}
+
+.card__desc-list__address {
+	width: 220px;
+	margin-right: 80px;
+	@media screen and (max-width: $ipad-pro) {
+		margin-right: 45px;
+	}
+	@media screen and (max-width: $ipad-mini) {
+		margin-right: 10px;
+	}
+}
+.card__desc-list__workhours {
+	width: 157px;
+	margin-right: 96px;
+	.workhours-wrapper {
+		display: flex;
+		justify-content: space-between;
+		span {
+			display: block;
+		}
+	}
+	@media screen and (max-width: $ipad-mini) {
+		margin-right: 30px;
+	}
+}
+.card__desc-list__available {
+	width: 140px;
+	margin-right: 60px;
+	&.card__desc-list__title {
+		@media screen and (max-width: $ipad-mini) {
+			margin-left: 10px;
+		}
+	}
+	@media screen and (max-width: $ipad-mini) {
+		margin-right: 10px;
+	}
+}
+.card__desc-list__num {
+	width: 104px;
+}
+.card__desc-list__btn {
+	margin-left: auto;
+	button {
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: 0.12em;
+		color: $white;
+		padding: 9px 40px;
+		border: none;
+		background: $accent;
+		border-radius: 3px;
+		@media screen and (max-width: $ipad-mini) {
+			padding: 9px 20px;
+		}
+	}
+}
